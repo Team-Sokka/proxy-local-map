@@ -8,6 +8,7 @@ import NearbyListingsModule from './components/NearbyListingsModule.jsx';
 const App = (props) => (
   <React.Fragment>
     <Navbar/>
+    {/* <h1>Hello Friends</h1> */}
     {/* Breadcrumbs Module */}
     <GalleryModule/>
     {/* Basic Information and Contact Form */}

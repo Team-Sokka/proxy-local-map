@@ -13,7 +13,8 @@ const NavContainer = styled.div`
   background-color: rgb(255,255,255);
   border: 1px solid rgb(232, 233, 234);
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
+  position: -webkit-sticky;
+  position: sticky;
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }

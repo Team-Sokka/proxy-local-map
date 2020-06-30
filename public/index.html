@@ -18,10 +18,16 @@
   var params = new URLSearchParams(window.location.search);
   var houseID = params.get('id')
   // Request for local map
-  var scriptUrl = `http://127.0.0.1:8002/proxy?id=${houseID}`
+  var mapScriptUrl = `http://127.0.0.1:8002/proxy?id=${houseID}`
   var localMapScript = document.createElement('script');
-  localMapScript.setAttribute('src', scriptUrl);
+  localMapScript.setAttribute('src', mapScriptUrl);
   document.body.append(localMapScript)
+
+  var galleryScriptUrl = `http://127.0.0.1:8001/client/dist/bundle.js`;
+  var galleryScript = document.createElement('script');
+  galleryScript.setAttribute('src', galleryScriptUrl);
+  document.body.append(galleryScript);
+
   </script>
   <!-- API for Google Maps -->
   <script
