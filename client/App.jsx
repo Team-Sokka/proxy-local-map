@@ -1,20 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './components/Navbar.jsx'
-import Map from './components/MapModule.jsx'
-
+import Navbar from './components/Navbar.jsx';
+import GalleryModule from './components/GalleryModule.jsx'
+import MapModule from './components/MapModule.jsx';
+import NearbyListingsModule from './components/NearbyListingsModule.jsx';
 
 const App = (props) => (
   <React.Fragment>
     <Navbar/>
     {/* Breadcrumbs Module */}
-    {/* Gallery Module */}
+    <GalleryModule/>
     {/* Basic Information and Contact Form */}
     {/* 3D View */}
-    <Map />
+    <MapModule />
     {/* Description */}
     {/* Home Details */}
     {/* Price History */}
+    <NearbyListingsModule/>
     {/* Similar Homes */}
     {/* New Listings */}
 
