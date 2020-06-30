@@ -1,0 +1,28 @@
+{
+  "name": "proxy-local-map",
+  "version": "1.0.0",
+  "description": "proxy for house reactor",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Sokka/proxy-local-map.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Sokka/proxy-local-map/issues"
+  },
+  "homepage": "https://github.com/Team-Sokka/proxy-local-map#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

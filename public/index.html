@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <!-- Icons for local map -->
+  <script src="https://kit.fontawesome.com/cb5488eec8.js" crossorigin="anonymous"></script>
+  <!-- Trulia Font -->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700">
+</head>
+<body>
+  <h1>Proxy Server</h1>
+  <h3>Location Information</h3>
+  <div id="mapModule"></div>
+  <!-- React -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script>
+  //Pull Search Params
+  var params = new URLSearchParams(window.location.search);
+  var houseID = params.get('id')
+  // Request for local map
+  var scriptUrl = `http://127.0.0.1:8002/proxy?id=${houseID}`
+  var localMapScript = document.createElement('script');
+  localMapScript.setAttribute('src', scriptUrl);
+  document.body.append(localMapScript)
+  </script>
+  <!-- API for Google Maps -->
+  <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAggoE_AG9-JK_ry_hzCNFZ6H1W1b4MLIw"> </script>
+</body>
