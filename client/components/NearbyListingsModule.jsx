@@ -1,9 +1,14 @@
 import React from 'react';
+import {ContentOuterContainer, ContentInnerContainer } from '../styles.js'
 
 const NearbyListingsModule = (props) => (
-  <div id="listingsNear">
-    <h1>Nearby Listings</h1>
-  </div>
+  <ContentOuterContainer>
+    <ContentInnerContainer>
+      <div id="listingsNear">
+      </div>
+    </ContentInnerContainer>
+  </ContentOuterContainer>
+
 )
 
 export default NearbyListingsModule;
