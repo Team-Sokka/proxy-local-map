@@ -20,6 +20,31 @@ export const ContentInnerContainerRow = styled.div`
   max-width: 992px;
 `;
 
+export const BasicInformationGrid = styled.div`
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+`
+export const BasicInformationSectionOne = styled.div`
+  grid-column: 1;
+  > h1 {
+    font-size: 28px;
+  }
+`
+
+export const BasicInformationSectionTwo = styled.div`
+  grid-column: 2;
+  > h1 {
+    font-size: 28px;
+  }
+`
+
+export const BasicInformationFormSection = styled.div`
+  grid-column: 3;
+`
+
 export const PrimaryButton = styled.button`
   color: rgb(255,255,255);;
   background-color: rgb(0,120,130);
@@ -59,6 +84,11 @@ export const ReverseButton = styled.button`
     background-color: rgb(0, 120, 130);
     border-color:rgb(255,255,255);
   }
+`
+
+export const FontAwesomeIcon = styled.i`
+  padding: 10px 10px 10px 0px;
+  color: #869099;
 `
 
 export const SignupLoginButton = styled.button`

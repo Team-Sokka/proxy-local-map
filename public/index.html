@@ -23,13 +23,13 @@
   document.body.append(localMapScript)
 
   //Gallery Module
-  var galleryScriptUrl = `http://127.0.0.1:8001/bundle.js`;
+  var galleryScriptUrl = `http://127.0.0.1:8001/bundle.js?id=${houseID}`;
   var galleryScript = document.createElement('script');
   galleryScript.setAttribute('src', galleryScriptUrl);
   document.body.append(galleryScript);
 
   //Listings module
-  var nearbyListingsUrl = 'http://127.0.0.1:8003/bundle.js';
+  var nearbyListingsUrl = `http://127.0.0.1:8003/bundle.js?id=${houseID}`;
   var nearbyListingsScript = document.createElement('script');
   nearbyListingsScript.setAttribute('src', nearbyListingsUrl);
   document.body.append(nearbyListingsScript);

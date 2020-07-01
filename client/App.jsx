@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Navbar from './components/Navbar.jsx';
 import Breadcrumbs from './components/Breadcrumbs.jsx';
 import GalleryModule from './components/GalleryModule.jsx';
+import BasicInformation from './components/BasicInformation.jsx'
 import MapModule from './components/MapModule.jsx';
 import Description from './components/Description.jsx';
 import NearbyListingsModule from './components/NearbyListingsModule.jsx';
@@ -10,11 +11,10 @@ import NearbyListingsModule from './components/NearbyListingsModule.jsx';
 const App = (props) => (
   <React.Fragment>
     <Navbar/>
-    {/* <h1>Hello Friends</h1> */}
-    {/* Breadcrumbs Module */}
     <Breadcrumbs/>
     <GalleryModule/>
     {/* Basic Information and Contact Form */}
+    <BasicInformation />
     {/* 3D View */}
     <MapModule />
     <Description />
