@@ -16,7 +16,7 @@ const App = (props) => (
     {/* Basic Information and Contact Form */}
     <BasicInformation />
     {/* 3D View */}
-    <MapModule />
+    {/* <MapModule /> */}
     <Description />
     {/* Home Details */}
     {/* Price History */}

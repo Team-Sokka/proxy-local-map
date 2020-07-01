@@ -25,6 +25,7 @@ export const BasicInformationGrid = styled.div`
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
   width: 100%;
 `
 export const BasicInformationSectionOne = styled.div`
@@ -43,6 +44,14 @@ export const BasicInformationSectionTwo = styled.div`
 
 export const BasicInformationFormSection = styled.div`
   grid-column: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+`
+
+export const BasicInformationLocalSection = styled.div`
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row: 2;
 `
 
 export const PrimaryButton = styled.button`

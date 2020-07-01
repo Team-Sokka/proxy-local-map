@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactAgent from './ContactAgent.jsx';
-import {ContentOuterContainer, ContentInnerContainerRow, BasicInformationGrid, BasicInformationSectionOne, BasicInformationSectionTwo, BasicInformationFormSection, FontAwesomeIcon, PrimaryButton } from '../styles.js'
+import MapModule from './MapModule.jsx';
+import {ContentOuterContainer, ContentInnerContainerRow, BasicInformationGrid, BasicInformationSectionOne, BasicInformationSectionTwo, BasicInformationFormSection, BasicInformationLocalSection, FontAwesomeIcon, PrimaryButton } from '../styles.js'
 const BasicInformation = (props) => (
   <ContentOuterContainer>
     <ContentInnerContainerRow>
@@ -21,6 +22,9 @@ const BasicInformation = (props) => (
         <BasicInformationFormSection>
           <ContactAgent />
         </BasicInformationFormSection>
+        <BasicInformationLocalSection>
+          <MapModule/>
+        </BasicInformationLocalSection>
       </BasicInformationGrid>
 
 
