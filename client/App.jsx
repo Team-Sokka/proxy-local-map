@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/Navbar.jsx';
-import Description from './components/Description.jsx';
-import GalleryModule from './components/GalleryModule.jsx'
+import Breadcrumbs from './components/Breadcrumbs.jsx';
+import GalleryModule from './components/GalleryModule.jsx';
 import MapModule from './components/MapModule.jsx';
+import Description from './components/Description.jsx';
 import NearbyListingsModule from './components/NearbyListingsModule.jsx';
 
 const App = (props) => (
@@ -11,6 +12,7 @@ const App = (props) => (
     <Navbar/>
     {/* <h1>Hello Friends</h1> */}
     {/* Breadcrumbs Module */}
+    <Breadcrumbs/>
     <GalleryModule/>
     {/* Basic Information and Contact Form */}
     {/* 3D View */}

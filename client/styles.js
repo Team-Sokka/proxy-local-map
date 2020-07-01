@@ -11,6 +11,12 @@ export const ContentInnerContainer = styled.div`
   justify-content: center;
   width: 66.6vw;
 `;
+export const ContentInnerContainerRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 66.6vw;
+`;
 
 export const PrimaryButton = styled.button`
   color: rgb(255,255,255);;
