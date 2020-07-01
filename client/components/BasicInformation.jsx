@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactAgent from './ContactAgent.jsx';
 import {ContentOuterContainer, ContentInnerContainerRow, BasicInformationGrid, BasicInformationSectionOne, BasicInformationSectionTwo, BasicInformationFormSection, FontAwesomeIcon, PrimaryButton } from '../styles.js'
 const BasicInformation = (props) => (
   <ContentOuterContainer>
@@ -18,7 +19,7 @@ const BasicInformation = (props) => (
           <PrimaryButton>Get Pre-Qualified</PrimaryButton>
         </BasicInformationSectionTwo>
         <BasicInformationFormSection>
-          <h1>Form</h1>
+          <ContactAgent />
         </BasicInformationFormSection>
       </BasicInformationGrid>
 
