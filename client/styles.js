@@ -10,12 +10,14 @@ export const ContentInnerContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 66.6vw;
+  max-width: 992px;
 `;
 export const ContentInnerContainerRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 66.6vw;
+  max-width: 992px;
 `;
 
 export const PrimaryButton = styled.button`
