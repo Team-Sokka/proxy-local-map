@@ -17,6 +17,7 @@ const Navbar = (props) => (
       <ReverseButton>Saved Homes</ReverseButton>
       <ReverseButton>Saved Searches</ReverseButton>
       <SignupLoginButton>Sign up or Log in</SignupLoginButton>
+      <i style={{padding: "20px"}} className="fa fa-bars fa-lg" aria-hidden="true"></i>
     </RightNav>
   </NavContainer>
 )
