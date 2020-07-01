@@ -1,7 +1,26 @@
 import React from 'react';
+import { ReverseButton, NavContainer, LeftNav, RightNav, Search, SearchIcon, SignupLoginButton } from '../styles.js';
 
 const Navbar = (props) => (
-  <h1>Navigation</h1>
+  <NavContainer>
+    <LeftNav>
+      <img src="assets/logo_size.jpg"/>
+      <Search placeholder={'Honolulu, HI'}/>
+      <SearchIcon>
+        <i className="fa fa-search" aria-hidden="true"></i>
+      </SearchIcon>
+      <ReverseButton>Buy</ReverseButton>
+      <ReverseButton>Rent</ReverseButton>
+      <ReverseButton>Mortgage</ReverseButton>
+    </LeftNav>
+    <RightNav>
+      <ReverseButton>Saved Homes</ReverseButton>
+      <ReverseButton>Saved Searches</ReverseButton>
+      <SignupLoginButton>Sign up or Log in</SignupLoginButton>
+      <i style={{padding: "20px"}} className="fa fa-bars fa-lg" aria-hidden="true"></i>
+    </RightNav>
+  </NavContainer>
 )
+
 
 export default Navbar;
