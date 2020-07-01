@@ -10,33 +10,17 @@
 
   <!-- React -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <script>
-  //Pull Search Params
-  var params = new URLSearchParams(window.location.search);
-  var houseID = params.get('id');
-  // Request for local map
-  var mapScriptUrl = `http://127.0.0.1:8002/proxy?id=${houseID}`;
-  var localMapScript = document.createElement('script');
-  localMapScript.setAttribute('src', mapScriptUrl);
-  document.body.append(localMapScript)
-
-  //Gallery Module
-  var galleryScriptUrl = `http://127.0.0.1:8001/bundle.js?id=${houseID}`;
-  var galleryScript = document.createElement('script');
-  galleryScript.setAttribute('src', galleryScriptUrl);
-  document.body.append(galleryScript);
-
-  //Listings module
-  var nearbyListingsUrl = `http://127.0.0.1:8003/bundle.js?id=${houseID}`;
-  var nearbyListingsScript = document.createElement('script');
-  nearbyListingsScript.setAttribute('src', nearbyListingsUrl);
-  document.body.append(nearbyListingsScript);
-  </script>
+  <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
   <!-- API for Google Maps -->
   <script
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAggoE_AG9-JK_ry_hzCNFZ6H1W1b4MLIw"> </script>
 <!-- Load Proxy's stuff -->
 <script src="dist/bundle.js"></script>
+<!-- Gallery Service -->
+<script src="http://127.0.0.1:8001/bundle.js" ></script>
+<!-- Local Map Service -->
+<script src="http://127.0.0.1:8002/proxy" ></script>
+<!-- Nearby Listings Service -->
+<script src="http://127.0.0.1:8003/bundle.js" ></script>
 </body>

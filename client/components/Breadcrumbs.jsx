@@ -6,7 +6,7 @@ const Breadcrumbs = (props) => (
     <ContentInnerContainerRow>
       <span style={{color: "rgb(0, 120, 130)"}}>
         <span style={{padding: "0px 20px 0px 0px"}}>Back To Search </span>
-        <span> For Sale > HI > Honolulu > 96825 > 9 Lumahai St.</span>
+        <span> For Sale > HI > Honolulu > 96825 > 3859 Owena St.</span>
       </span>
     </ContentInnerContainerRow>
   </ContentOuterContainer>

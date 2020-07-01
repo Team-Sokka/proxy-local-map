@@ -7,7 +7,7 @@ const BasicInformation = (props) => (
     <ContentInnerContainerRow>
       <BasicInformationGrid>
         <BasicInformationSectionOne>
-          <h1>3 Lumahai St.</h1>
+          <h1>3859 Owena St.</h1>
           <div>Honolulu, HI 96825</div>
           <FontAwesomeIcon className="fa fa-bed" aria-hidden="true"> 5 Beds</FontAwesomeIcon>
           <FontAwesomeIcon className="fa fa-bath" aria-hidden="true"> 4 Baths</FontAwesomeIcon>

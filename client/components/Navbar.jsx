@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReverseButton, NavContainer, LeftNav, RightNav, Search, SearchIcon, SignupLoginButton }from '../styles.js';
+import { ReverseButton, NavContainer, LeftNav, RightNav, Search, SearchIcon, SignupLoginButton } from '../styles.js';
 
 const Navbar = (props) => (
   <NavContainer>

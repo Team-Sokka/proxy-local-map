@@ -171,3 +171,96 @@ border-radius: 0px 8px 8px 0px;
   background-color: rgb(170, 60, 35);
 }
 `
+
+//Contact Agent
+
+export const FlexContainerRow = styled.div`
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+`
+
+export const FormContainer = styled.div`
+padding: 16px;
+`
+
+export const Form = styled.form`
+border-radius: 5px;
+overflow:scroll;
+max-height: 87%;
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+export const SimpleInput = styled.input`
+display: inline-block;
+border-radius: 8px;
+border-color: rgb(205, 209, 212);
+border-style: solid;
+border-width: 1px;
+padding: 8px;
+font-size: 16px;
+line-height: 1.5;
+width: 94%;
+margin: 8px;
+`
+
+export const MessageText = styled.textarea`
+border-radius: 8px;
+border-color: rgb(205, 209, 212);
+border-style: solid;
+border-width: 1px;
+padding: 8px;
+font-size: 16px;
+line-height: 1.5;
+height: 78px;
+width: 94%;
+margin: 8px;
+resize: none;
+`
+
+export const Submit = styled.button`
+display: inline-block;
+border-radius: 8px;
+border-color: rgb(217, 60, 35);
+border-style: solid;
+border-width: 1px;
+padding: 8px;
+font-size: 16px;
+line-height: 1.5;
+width: 100%;
+margin: 8px;
+background-color: rgb(217, 60, 35);
+color: rgb(255, 255, 255);
+font-weight: 400;
+transition: top 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s;
+&:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(217, 60, 35);
+}
+`
+export const CheckboxContainer = styled.div`
+display: flex;
+width: 100%;
+color: rgb(134, 144, 153);
+font-size: 12px;
+line-height: 2;
+margin: 3px;
+align-items: center;
+`;
+
+export const CheckBox = styled.input`
+display: inline-block;
+border-radius: 8px;
+border-color: rgb(205, 209, 212);
+border-style: solid;
+border-width: 1px;
+font-size: 16px;
+line-height: 1.5;
+`
+
+export const LegalDisclaimer = styled.div`
+font-size: 10px;
+line-height: 16px;
+color: rgb(134, 144, 153);
+`
