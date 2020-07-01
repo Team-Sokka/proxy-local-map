@@ -1,30 +1,25 @@
 import React from 'react';
-import styled from 'styled-components';
+import { ReverseButton, NavContainer, LeftNav, RightNav, Search, SearchIcon, SignupLoginButton }from '../styles.js';
 
 const Navbar = (props) => (
   <NavContainer>
-    <h1>Navigation</h1>
-    <Search/>
-
+    <LeftNav>
+      <img src="assets/logo_size.jpg"/>
+      <Search placeholder={'Honolulu, HI'}/>
+      <SearchIcon>
+        <i className="fa fa-search" aria-hidden="true"></i>
+      </SearchIcon>
+      <ReverseButton>Buy</ReverseButton>
+      <ReverseButton>Rent</ReverseButton>
+      <ReverseButton>Mortgage</ReverseButton>
+    </LeftNav>
+    <RightNav>
+      <ReverseButton>Saved Homes</ReverseButton>
+      <ReverseButton>Saved Searches</ReverseButton>
+      <SignupLoginButton>Sign up or Log in</SignupLoginButton>
+    </RightNav>
   </NavContainer>
 )
 
-const NavContainer = styled.div`
-  background-color: rgb(255,255,255);
-  border: 1px solid rgb(232, 233, 234);
-  overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-`
-const Search = styled.input`
-  background-color: rgb(245,246,247);
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(245,246,247);
-  padding: 8px 64px 8px 16px;
-`
 
 export default Navbar;

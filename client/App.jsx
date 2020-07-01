@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/Navbar.jsx';
+import Description from './components/Description.jsx';
 import GalleryModule from './components/GalleryModule.jsx'
 import MapModule from './components/MapModule.jsx';
 import NearbyListingsModule from './components/NearbyListingsModule.jsx';
@@ -14,7 +15,7 @@ const App = (props) => (
     {/* Basic Information and Contact Form */}
     {/* 3D View */}
     <MapModule />
-    {/* Description */}
+    <Description />
     {/* Home Details */}
     {/* Price History */}
     <NearbyListingsModule/>
